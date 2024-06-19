@@ -17,9 +17,6 @@
    source ~/.zshrc
    ```
 
-3. **Sample Starship config.toml**:
-edit ~/.config/starship.toml
-use the sample in src diretory
 
 ## Fira Nerd Font Installation
 
@@ -43,6 +40,7 @@ brew install --cask font-fira-mono-nerd-font
 
 - Once installed, the Starship prompt will be automatically activated in your terminal.
 - Customize Starship by creating a configuration file at `~/.config/starship.toml`.
+- A sample is in src directory.
 
 For further customization options, refer to the [Starship Documentation](https://starship.rs/).
 
