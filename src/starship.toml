@@ -1,0 +1,40 @@
+format = """\
+[󰀵 ]()\
+$time()\
+$directory\
+$git_branch\
+$git_status\
+$git_metrics\
+$cmd_duration\
+$character\
+"""
+
+[directory]
+format = "[$path ]()"
+
+[time]
+disabled = false
+time_format = "%H:%M" # https://man7.org/linux/man-pages/man3/strftime.3.html
+format = "[$time ]()"
+
+[git_branch]
+format = "([$symbol $branch ](yellow))"
+symbol = ""
+
+[git_status]
+disabled = false
+format = "([$all_status ](red))"
+
+[git_metrics]
+disabled = false
+# format = "([+$added]())[]()"
+format = "([+$added]())"
+
+[cmd_duration]
+min_time = 1000
+show_milliseconds = false
+format = "[󰅐$duration ]()"
+
+[character]
+success_symbol = '[ ](bold green)'
+error_symbol = '[ ✗](bold bright-red)'
